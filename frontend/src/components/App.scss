@@ -4,6 +4,24 @@
 }
 
 #app {
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+}
+
+section.container {
+  overflow: scroll;
+  flex-grow: 1;
+}
+
+main {
   padding: 20px;
   width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  article {
+    margin: 20px;
+  }
 }

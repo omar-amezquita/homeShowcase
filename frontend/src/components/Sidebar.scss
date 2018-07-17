@@ -1,0 +1,27 @@
+@import './variables';
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: $base-color;
+  padding-top: 90px;
+  color: white;
+
+  strong {
+    padding: 20px;
+    font-weight: bold;
+  }
+
+  ul {
+    li {
+      padding: 20px;
+      text-indent: 5px;
+
+      &:hover {
+        background: $contrast-color;
+        text-indent: 15px;
+      }
+    }
+  }
+}
