@@ -1,4 +1,6 @@
 @import './node_modules/reset-css/sass/reset';
+@import './variables';
+
 * {
   box-sizing: border-box;
 }
@@ -23,5 +25,12 @@ main {
 
   article {
     margin: 20px;
+  }
+}
+
+@media(max-width: $break-phone) {
+  main {
+    padding: 0px;
+    justify-content: center;
   }
 }

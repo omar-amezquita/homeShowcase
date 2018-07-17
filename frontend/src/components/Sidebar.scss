@@ -25,3 +25,9 @@
     }
   }
 }
+
+@media(max-width: $break-phone) {
+  .sidebar {
+    display: none;
+  }
+}

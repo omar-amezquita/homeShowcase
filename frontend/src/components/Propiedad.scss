@@ -76,11 +76,21 @@
   width: 100%;
   height: auto;
   min-height: 300px;
+  margin-bottom: 20px;
     
   .details {
     .extra-details {
       display: block;
     }
+  }
+
+  img {
+    transform: scale(1);
+  }
+
+  .details .extra-details {
+    max-height: 100px;
+    transition: max-height 0.5s ease-in-out;
   }
 }
 }

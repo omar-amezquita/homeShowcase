@@ -9,7 +9,7 @@ const Propiedad = ({ data }) => (
     <div className="details">
       <div className="col headline">
         <span>{`${data.colonia} - ${data.delegacion}`}</span>
-        <span>{parseInt(data.precio).toLocaleString('es-mx', { style: 'currency', currency: 'MXN', useGrouping: true })}</span>
+        <span>{parseInt(data.precio).toLocaleString('es-mx', { style: 'currency', currency: 'MXN', useGrouping: true, minimumFractionDigits: 0 })}</span>
       </div>
       <div className="col extra-details">
         <div>
