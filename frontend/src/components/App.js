@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom';
 import DataProvider from './DataProvider';
 import PropList from './PropList';
 
+import './App.scss';
+
 const App = () =>(
   <DataProvider
     endpoint="api/propiedades/"
     render={data => <PropList data={data} />}
   >
-    <h1>hola</h1>
   </DataProvider>
 );
 

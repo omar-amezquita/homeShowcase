@@ -1,0 +1,9 @@
+@import './node_modules/reset-css/sass/reset';
+* {
+  box-sizing: border-box;
+}
+
+#app {
+  padding: 20px;
+  width: 100%;
+}

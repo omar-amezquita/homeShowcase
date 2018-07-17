@@ -4,7 +4,7 @@ import { array } from 'prop-types';
 import Propiedad from './Propiedad';
 
 const PropList = ({ data }) => data.length > 0
-  ? data.map(item => (<Propiedad data={item} />))
+  ? data.map(item => (<Propiedad key={item.id} data={item} />))
   : (
     <h1>No hay propiedades listadas aún. Intenta de nuevo en unos momentos </h1>
   );
