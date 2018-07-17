@@ -5,4 +5,16 @@ from homeService.models import Propiedad
 class PropiedadSerializer(serializers.ModelSerializer):
     class Meta:
         model = Propiedad
-        fields = ('id', 'superficie', 'construccion', 'recamaras', 'banios', 'precio')
+        fields = (
+                   'id',
+                   'construccion',
+                   'recamaras',
+                   'banios',
+                   'precio',
+                   'foto',
+                   'colonia',
+                   'delegacion',
+                   'noExterior',
+                   'noInterior',
+                   'calle',
+                 )
